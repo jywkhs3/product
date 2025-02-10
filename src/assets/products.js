@@ -1,7 +1,7 @@
 export const products = [
-  {id:1, name:'Cheese-pizza', price:'25', img:'./src/assets/pizza1.jfif', category:'Best'},
-  {id:2, name:'Pepperoni-pizza', price:'25', img:'./src/assets/Pizza (1).jfif', category:'Best'},
-  {id:3, name:'Burger', price:'10', img:'./src/assets/burger.jfif', category:'Best'},
+  {id:1, name:'Cheese-pizza', price:'25', img:'/images/pizza1.jfif', category:'Best'},
+  {id:2, name:'Pepperoni-pizza', price:'25', img:'/images/Pizza (1).jfif', category:'Best'},
+  {id:3, name:'Burger', price:'10', img:'./images/burger.jfif', category:'Best'},
   {id:4, name:'Fried-chicken', price:'20', img:'./src/assets/kfc.jfif', category:'Best'},
   {id:5, name:'Tacos', price:'15', img:'./src/assets/tacos.jfif', category:'New'},
   {id:6, name:'Chicken-salad', price:'10', img:'./src/assets/chickensalad.jfif', category:'New'},
