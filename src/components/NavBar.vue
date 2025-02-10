@@ -2,7 +2,7 @@
   <nav>
     <h1>"Have fun meal!"</h1>
     <div class="router-link">
-      <router-link to="/">Shop-list</router-link>
+      <router-link to="/" @click="selectedClick(list)">Shop-list</router-link>
       <router-link to="/cart">Cart</router-link>
     </div>
     <ul>
