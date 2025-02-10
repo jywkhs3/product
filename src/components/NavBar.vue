@@ -33,11 +33,20 @@ import { useRouter } from 'vue-router';
     justify-content: space-between;
     align-items: center;
     padding: 2rem 5rem;
+    @media screen and (max-width:768px) {
+      display: flex;
+      flex-direction: column;
+      // justify-content: center;
+    }
+    @media screen and (max-width:500px) {
+      display: flex;
+      flex-direction: column;
+      // justify-content: center;
+    }
     .router-link{
-      flex: 1;
       display: flex;
       gap: 10px;
-      margin: 10px;
+      margin: 10px 0;
       a{
         text-decoration: none;
         color: inherit;
@@ -53,11 +62,11 @@ import { useRouter } from 'vue-router';
     ul{
       display: flex;
       background-color: antiquewhite;
-      padding: 1rem 1.5rem;
+      padding: 1rem;
       border-radius: 5px;
-      gap: 2rem;
       li{
-        cursor: pointer;  
+        cursor: pointer;
+        padding: 5px 10px;  
         &:hover{
           color: red;
           font-weight: bolder;

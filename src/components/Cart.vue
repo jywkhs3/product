@@ -80,6 +80,14 @@ import { useRouter } from 'vue-router';
     display: flex;
     padding: 2rem 5rem;
     gap: 1rem;
+    @media screen and (max-width:768px) {
+      display: block;
+      padding: 1rem;
+    }
+    @media screen and (max-width:500px) {
+      display: block;
+      padding: 1rem;
+    }
     h4{
       color: #444;
     }
@@ -94,6 +102,7 @@ import { useRouter } from 'vue-router';
       background-color: antiquewhite;
       border-radius: 5px 5px 0 0;
       border-bottom: 1px solid #222;
+      padding: 0 1rem;
     }
     ul{
       text-align: center;
@@ -119,14 +128,37 @@ import { useRouter } from 'vue-router';
       background-color: antiquewhite;
       border-radius: 5px 5px 0 0;
       border-bottom: 1px solid #222;
+      padding: 0 1rem;
     }
     .total{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
       border: none;
-      padding: 1rem; 
+      padding: 1rem;
+      p{
+        padding: 10px;
+        border: 1px solid #222;
+        border-radius: 5px;
+        box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+      } 
       button{
       cursor: pointer;
-      padding: 5px;
-      }        
+      width: 100px;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      background-color: rgba(255,255,255,0.4);
+      &:hover{
+        background-color: brown;
+        color: #fff;
+      }
+      @media screen and (max-width:500px) {
+        width: 100%;
+      }
+      } 
+
     }
   }
 </style>

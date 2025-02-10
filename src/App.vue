@@ -1,6 +1,6 @@
 <template>
   <div class="=app">
-    <h1>P.B.C food shop</h1>
+    <h1 @click="selectedCategory">P.B.C food shop</h1>
     <NavBar :categories="categories" @selected="selectedCategory"/>
     <!-- <List :products="products" @add-to-cart="addToCart"/>
     <List :products="filterProducts" @add-to-cart="addToCart"/>
@@ -75,6 +75,10 @@ const filterProducts = computed(()=>{
 <style lang="scss" scoped>
   h1{
     text-align: center;
-    margin: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    @media screen and (max-width:500px){
+      text-align: center;
+    }
   }
 </style>
